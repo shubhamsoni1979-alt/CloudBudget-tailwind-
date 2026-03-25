@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudBudget</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            white: '#FFFFFF',
+                            black: '#000000',
+                            orange: '#EE3D1B',
+                            red: '#D52047'
+                        }
+                    },
+                    backgroundImage: {
+                        'hero-gradient': 'linear-gradient(135deg, rgba(213, 32, 71, 0.85) 0%, rgba(238, 61, 27, 0.85) 100%)',
+                    }
+                }
+            }
+        }
+    </script>
+</he    ad>
+
+<body class="font-sans text-brand-black antialiased bg-brand-white">
+
+    <!-- Hero Section -->
+    <section class="relative w-full pb-32 md:pb-48 bg-cover bg-center"
+        style="background-image: url('images/bg.jpg');">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-hero-gradient"></div>
+
+        <div class="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-8">
+           <!-- Navbar -->
+<nav class="flex items-center justify-between py-8">
+    <div class="flex items-center gap-3 text-white font-black text-2xl uppercase tracking-widest">
+        <img src="images/logo.png" alt="cloud" class="w-10 h-10 object-contain">
+        CLOUDBUDGET
+    </div>
+
+    <div class="hidden lg:flex items-center gap-10 text-white font-bold text-sm tracking-widest uppercase">
+        <a href="#" class="hover:text-gray-200 transition-colors">Overview</a>
+        <a href="#" class="hover:text-gray-200 transition-colors">Features</a>
+        <a href="#" class="hover:text-gray-200 transition-colors">Technology</a>
+        <a href="#" class="hover:text-gray-200 transition-colors">Contact</a>
+        <a href="#" class="hover:text-gray-200 transition-colors">Sign in</a>
+    </div>
+
+    <div class="hidden lg:flex items-center gap-8">
+        <!-- Language Button Wrapper -->
+        <div class="flex items-center gap-2 text-white font-bold text-sm cursor-pointer hover:opacity-80 transition-opacity">
+            
+            <!-- Changed w-6 h-6 to h-7 w-auto -->
+            <img src="images/Language Selection.png" alt="language" class="h-7 w-auto object-contain">
+        
+        </div>
+        
+        <a href="#"
+            class="border-[3px] border-white text-white font-bold text-sm px-8 py-2.5 rounded hover:bg-white hover:text-brand-red transition-all uppercase tracking-widest">Login</a>
+    </div>
+</nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden text-white hover:text-gray-200">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </nav>
+
+            <!-- Hero Content -->
+            <div class="text-center mt-24 md:mt-32">
+                <h1 class="text-5xl md:text-[5.5rem] font-bold text-white tracking-widest uppercase mb-8 leading-none">
+                    CLOUDBUDGET</h1>
+                <p class="text-white text-xl md:text-[1.35rem] font-semibold mb-3 tracking-wide">Cloud budget management
+                    for everyone. Only</p>
+                <p class="text-white text-xl md:text-[1.35rem] font-semibold mb-12 tracking-wide">€69.95 a Month After a
+                    7 Day Trial of<br>Up to €4.99</p>
+                <a href="#"
+                    class="inline-block bg-white text-brand-red font-bold text-[0.95rem] tracking-widest uppercase px-12 py-4 rounded shadow-2xl hover:bg-gray-50 transition-all">Sign
+                    Up</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Easy to Use -->
+    <section class="max-w-7xl mx-auto px-6 lg:px-8 py-24 md:py-32">
+        <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+            <div class="flex-1 text-center lg:text-left">
+                <h2 class="text-4xl md:text-[2.5rem] font-bold text-brand-black mb-8 leading-tight">Easy to Use Cloud
+                    Budget Management Software</h2>
+                <p class="text-gray-500 mb-8 font-semibold text-lg leading-relaxed">Our software is made so you can
+                    access and manage your budget and expenses online at any time from any device. It provides detailed
+                    income and expense reports with graphs so you can easily see your spending patterns and budget at a
+                    glance. Read below to find out more.</p>
+                <a href="#" class="text-brand-red font-bold hover:underline text-lg">Learn More</a>
+            </div>
+            <div class="flex-1 w-full relative pl-6 md:pl-10">
+                <div class="rounded-3xl overflow-hidden shadow-2xl relative">
+                    <img src="images/Video_bg.png" alt="meeting video" class="w-full h-[400px] object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Features -->
+    <section class="w-full bg-[#fcfcfc] py-24 md:py-32">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-brand-black mb-20">Features</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 relative z-10 px-4">
+                <!-- Card 1 -->
+                <div
+                    class="bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] overflow-hidden flex flex-col items-center text-center px-10 pt-10 pb-12 hover:-translate-y-2 transition-transform duration-300 relative group">
+                    <div
+                        class="absolute inset-x-8 top-8 h-48 rounded-xl overflow-hidden z-0 shadow-lg group-hover:shadow-xl transition-shadow">
+                        <img src="images/card (01).jpg"
+                            alt="Money" class="w-full h-full object-cover">
+                    </div>
+                    <!-- spacer for the absolute image -->
+                    <div class="w-full h-40"></div>
+                    <div
+                        class="relative z-10 bg-white w-[110%] p-8 rounded-xl shadow-[0_-5px_20px_rgb(0,0,0,0.05)] mt-4">
+                        <h3 class="font-bold text-[1.35rem] mb-4 text-brand-black px-2">Supports All Currencies and
+                            Cards</h3>
+                        <p class="text-[0.95rem] text-gray-500 mb-6 font-semibold leading-relaxed">We support all
+                            popular currencies and is fully customizable to add.</p>
+                        <a href="#" class="text-brand-red font-bold text-sm tracking-widest hover:underline">Read
+                            More</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] overflow-hidden flex flex-col items-center text-center px-10 pt-10 pb-12 hover:-translate-y-2 transition-transform duration-300 relative group">
+                    <div
+                        class="absolute inset-x-8 top-8 h-48 rounded-xl overflow-hidden z-0 shadow-lg group-hover:shadow-xl transition-shadow">
+                        <img src="images/card (02).jpg"
+                            alt="Mobile" class="w-full h-full object-cover">
+                    </div>
+                    <div class="w-full h-40"></div>
+                    <div
+                        class="relative z-10 bg-white w-[110%] p-8 rounded-xl shadow-[0_-5px_20px_rgb(0,0,0,0.05)] mt-4">
+                        <h3 class="font-bold text-[1.35rem] mb-4 text-brand-black px-2">Manage your expenses on the go
+                        </h3>
+                        <p class="text-[0.95rem] text-gray-500 mb-6 font-semibold leading-relaxed">You can access your
+                            account from anywhere in the world on any device.</p>
+                        <a href="#" class="text-brand-red font-bold text-sm tracking-widest hover:underline">Read
+                            More</a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] overflow-hidden flex flex-col items-center text-center px-10 pt-10 pb-12 hover:-translate-y-2 transition-transform duration-300 relative group">
+                    <div
+                        class="absolute inset-x-8 top-8 h-48 rounded-xl overflow-hidden z-0 shadow-lg group-hover:shadow-xl transition-shadow">
+                        <img src="images/card (03).jpg"
+                            alt="Office" class="w-full h-full object-cover">
+                    </div>
+                    <div class="w-full h-40"></div>
+                    <div
+                        class="relative z-10 bg-white w-[110%] p-8 rounded-xl shadow-[0_-5px_20px_rgb(0,0,0,0.05)] mt-4">
+                        <h3 class="font-bold text-[1.35rem] mb-4 text-brand-black px-2">Cloud Budget Management Software
+                        </h3>
+                        <p class="text-[0.95rem] text-gray-500 mb-6 font-semibold leading-relaxed">Our software is made
+                            so you can access and manage your budget.</p>
+                        <a href="#" class="text-brand-red font-bold text-sm tracking-widest hover:underline">Read
+                            More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Section: Technology -->
+<section class="max-w-7xl mx-auto px-6 lg:px-8 py-24 md:py-32">
+    <h2 class="text-4xl font-bold text-center text-brand-black mb-24">Technology</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-20 text-center">
+
+        <!-- Tech 1 -->
+        <div class="relative flex flex-col items-center">
+            <!-- Added: grayscale, increased opacity-20 to opacity-60 -->
+            <img src="images/01 symbol.png" alt="01 Symbol" class="absolute -top-10 w-28 grayscale opacity-60 -z-10 pointer-events-none select-none">
+            <div class="w-[4.5rem] h-[4.5rem] mb-4 flex items-center justify-center">
+                <img src="images/cloud logo.png" alt="cloud" class="w-14 h-14 object-contain">
+            </div>
+            <h3 class="font-bold text-xl text-brand-black mb-4">Cloud Storage</h3>
+            <p class="text-[0.95rem] text-gray-500 font-semibold px-4 leading-relaxed">Access your account from anywhere in the world on any device.</p>
+        </div>
+
+        <!-- Tech 2 -->
+        <div class="relative flex flex-col items-center">
+            <img src="images/02 symbol.png" alt="02 Symbol" class="absolute -top-10 w-28 grayscale opacity-60 -z-10 pointer-events-none select-none">
+            <div class="w-[4.5rem] h-[4.5rem] mb-4 flex items-center justify-center">
+                <img src="images/secure logo.png" alt="secure" class="w-14 h-14 object-contain">
+            </div>
+            <h3 class="font-bold text-xl text-brand-black mb-4">Secure</h3>
+            <p class="text-[0.95rem] text-gray-500 font-semibold px-4 leading-relaxed">All your information is stored on secure cloud servers.</p>
+        </div>
+
+        <!-- Tech 3 -->
+        <div class="relative flex flex-col items-center">
+            <img src="images/03 symbol.png" alt="03 Symbol" class="absolute -top-10 w-28 grayscale opacity-60 -z-10 pointer-events-none select-none">
+            <div class="w-[4.5rem] h-[4.5rem] mb-4 flex items-center justify-center">
+                <img src="images/pdf logo.png" alt="pdf" class="w-14 h-14 object-contain">
+            </div>
+            <h3 class="font-bold text-xl text-brand-black mb-4">PDF Download</h3>
+            <p class="text-[0.95rem] text-gray-500 font-semibold px-4 leading-relaxed">Download any of your reports in PDF format.</p>
+        </div>
+
+        <!-- Tech 4 -->
+        <div class="relative flex flex-col items-center">
+            <img src="images/04 symbol.png" alt="04 Symbol" class="absolute -top-10 w-28 grayscale opacity-60 -z-10 pointer-events-none select-none">
+            <div class="w-[4.5rem] h-[4.5rem] mb-4 flex items-center justify-center">
+                <img src="images/csv logo.png" alt="csv" class="w-14 h-14 object-contain">
+            </div>
+            <h3 class="font-bold text-xl text-brand-black mb-4">CSV Download</h3>
+            <p class="text-[0.95rem] text-gray-500 font-semibold px-4 leading-relaxed">All your information is stored on secure cloud servers.</p>
+        </div>
+
+    </div>
+</section>
+
+
+   <!-- Section: Stay focused -->
+<section class="w-full relative bg-brand-red my-12 md:my-20">
+    <!-- Extend red background onto the right slightly purely visually -->
+    <div class="hidden md:block absolute inset-y-0 left-1/2 w-48 bg-brand-red rounded-r-[5rem]"></div>
+
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row relative z-10 py-16 md:py-24">
+
+        <!-- Left side text -->
+        <div class="w-full md:w-[45%] px-6 lg:px-8 flex flex-col justify-center md:pr-10 lg:pr-16 order-2 md:order-1 mt-12 md:mt-0 shadow-none">
+            <h2 class="text-[2.2rem] lg:text-[2.6rem] font-bold text-white mb-6 leading-[1.15]">Stay focused on saving money</h2>
+            <p class="text-white/90 font-semibold text-lg leading-relaxed mb-10">It is important to stay focused on saving money in any way you can. We help you monitor your spending habits so you can easily spot and cut any unnecessary expenses. Simply join today to get started!</p>
+        </div>
+
+        <!-- Right side overlapping image -->
+        <div class="w-full md:w-[55%] flex items-center relative order-1 md:order-2 px-6 lg:px-0 lg:pr-8">
+            <div class="w-full h-[350px] md:h-[420px] lg:h-[480px] rounded-3xl shadow-2xl overflow-hidden -mt-24 md:mt-0 ml-0 z-20 md:-ml-8 bg-brand-white">
+                <img src="images/person.jpg" alt="a men in hotel" class="w-full h-full object-cover">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- Section: Contact -->
+    <section class="max-w-7xl mx-auto px-6 lg:px-8 py-24 md:py-32">
+        <div class="flex flex-col lg:flex-row gap-16 lg:gap-24">
+            <div class="flex-1 lg:max-w-sm">
+                <h2 class="text-4xl font-bold text-brand-black mb-8">Contact</h2>
+                <p class="text-gray-600 font-semibold text-[1.05rem] leading-relaxed">Questions or concerns? Just fill
+                    out the form below and our support team will get back to you within 24 hours.</p>
+            </div>
+            <div class="flex-[1.8] xl:flex-[2]">
+                <form class="flex flex-col gap-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <input type="text" placeholder="First Name"
+                            class="w-full px-5 py-[1.125rem] border border-[#E5E7EB] rounded bg-white text-brand-black font-semibold placeholder-[#9CA3AF] focus:outline-none focus:border-brand-red transition-colors shadow-sm text-sm">
+                        <input type="text" placeholder="Last Name"
+                            class="w-full px-5 py-[1.125rem] border border-[#E5E7EB] rounded bg-white text-brand-black font-semibold placeholder-[#9CA3AF] focus:outline-none focus:border-brand-red transition-colors shadow-sm text-sm">
+                    </div>
+                    <input type="tel" placeholder="Phone Number"
+                        class="w-full px-5 py-[1.125rem] border border-[#E5E7EB] rounded bg-white text-brand-black font-semibold placeholder-[#9CA3AF] focus:outline-none focus:border-brand-red transition-colors shadow-sm text-sm">
+                    <div class="relative">
+                        <select
+                            class="w-full px-5 py-[1.125rem] border border-[#E5E7EB] rounded bg-white text-[#9CA3AF] font-semibold focus:outline-none focus:border-brand-red transition-colors shadow-sm appearance-none text-sm cursor-pointer">
+                            <option value="" disabled selected>Select Service</option>
+                            <option value="1">Sales</option>
+                            <option value="2">Support</option>
+                            <option value="3">Partnership</option>
+                        </select>
+                        <div
+                            class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-5 text-gray-400">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <button type="submit"
+                        class="bg-brand-red text-white font-bold tracking-widest uppercase px-12 py-[1.125rem] rounded shadow-lg hover:shadow-xl hover:bg-brand-orange transition-all mt-4 w-full md:w-auto self-start text-[0.95rem]">Submit
+                        Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+   <!-- Footer -->
+<footer class="w-full bg-[#FAFAFA] pt-20">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 mb-20">
+            <!-- Address -->
+            <div>
+                <h4 class="font-bold text-brand-black mb-8 text-lg">Address</h4>
+                <p class="text-sm text-gray-600 font-semibold leading-relaxed">Pipang Ltd, Griva Digeni,<br>1-19
+                    Anatoliki Street, 1st Floor<br>Nicosia 1066, Cyprus</p>
+            </div>
+            <!-- Services -->
+            <div>
+                <h4 class="font-bold text-brand-black mb-8 text-lg">Services</h4>
+                <ul class="space-y-4">
+                    <li><a href="#"
+                            class="text-sm text-gray-600 font-semibold hover:text-brand-red transition-colors">Overview</a>
+                    </li>
+                    <li><a href="#"
+                            class="text-sm text-gray-600 font-semibold hover:text-brand-red transition-colors">Features</a>
+                    </li>
+                    <li><a href="#"
+                            class="text-sm text-gray-600 font-semibold hover:text-brand-red transition-colors">Technology</a>
+                    </li>
+                    <li><a href="#"
+                            class="text-sm text-gray-600 font-semibold hover:text-brand-red transition-colors">Terms
+                            and Conditions</a></li>
+                    <li><a href="#"
+                            class="text-sm text-gray-600 font-semibold hover:text-brand-red transition-colors">Privacy</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Get in Touch -->
+            <div>
+                <h4 class="font-bold text-brand-black mb-8 text-lg">Get in Touch</h4>
+                <ul class="space-y-4 mb-8">
+                    <li><a href="/cdn-cgi/l/email-protection#0f666169604f6c63607a6b6d7a6b686a7b216c6062" class="text-sm text-gray-600 font-semibold hover:text-brand-red transition-colors"><span class="__cf_email__" data-cfemail="eb82858d84ab8887849e8f899e8f8c8e9fc5888486">[email&#160;protected]</span></a>
+                    </li>
+                    <li><a href="tel:+18442334566"
+                            class="text-sm text-gray-600 font-semibold hover:text-brand-red transition-colors">+1
+                            844 233 4566</a></li>
+                </ul>
+                <div class="flex gap-4 items-center mt-2">
+                    <img src="images/3 logo.png" alt="social-icons" class="h-8 object-contain">
+                </div>
+            </div>
+            <!-- We Support -->
+            <div>
+                <h4 class="font-bold text-brand-black mb-8 text-lg">We Support</h4>
+                <div class="flex gap-4 items-center">
+                    <img src="images/visa icon.png" alt="payment icon" class="h-10 object-contain">
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-200 py-6 text-center lg:text-left">
+            <!-- Corrected line below -->
+            <p class="text-xs text-gray-500 font-bold tracking-widest uppercase">
+                &copy; 2024 CloudBudget. All rights reserved.
+            </p>
+        </div>
+    </div>
+</footer>               
+</body>         
+</html>
